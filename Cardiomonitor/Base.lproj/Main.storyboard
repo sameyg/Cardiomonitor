@@ -215,7 +215,7 @@
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Submit "/>
                             </button>
-                            <textView clipsSubviews="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="Comments" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dgN-Vm-1dP">
+                            <textView clipsSubviews="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="Comment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dgN-Vm-1dP">
                                 <rect key="frame" x="35" y="275.5" width="250" height="54"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
