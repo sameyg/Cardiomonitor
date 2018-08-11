@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0609900A211F7471008DB974 /* RateRawDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06099009211F7471008DB974 /* RateRawDataVC.swift */; };
+		0609900D211F88E7008DB974 /* needcoredatamodel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0609900B211F88E7008DB974 /* needcoredatamodel.xcdatamodeld */; };
 		061127EA20F0A22300DAF237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127E920F0A22300DAF237 /* AppDelegate.swift */; };
 		061127EC20F0A22300DAF237 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127EB20F0A22300DAF237 /* FirstViewController.swift */; };
 		061127EE20F0A22300DAF237 /* InputRRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127ED20F0A22300DAF237 /* InputRRVC.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		06099009211F7471008DB974 /* RateRawDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRawDataVC.swift; sourceTree = "<group>"; };
+		0609900C211F88E7008DB974 /* needcoredatamodel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = needcoredatamodel.xcdatamodel; sourceTree = "<group>"; };
 		061127E620F0A22300DAF237 /* Cardiomonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cardiomonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		061127E920F0A22300DAF237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		061127EB20F0A22300DAF237 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				061127ED20F0A22300DAF237 /* InputRRVC.swift */,
 				06099009211F7471008DB974 /* RateRawDataVC.swift */,
 				061127EF20F0A22300DAF237 /* Main.storyboard */,
+				0609900B211F88E7008DB974 /* needcoredatamodel.xcdatamodeld */,
 				061127F220F0A22700DAF237 /* Assets.xcassets */,
 				061127F420F0A22700DAF237 /* LaunchScreen.storyboard */,
 				061127F720F0A22800DAF237 /* Info.plist */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0609900D211F88E7008DB974 /* needcoredatamodel.xcdatamodeld in Sources */,
 				061127EE20F0A22300DAF237 /* InputRRVC.swift in Sources */,
 				061127EA20F0A22300DAF237 /* AppDelegate.swift in Sources */,
 				061127EC20F0A22300DAF237 /* FirstViewController.swift in Sources */,
@@ -354,6 +358,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0609900B211F88E7008DB974 /* needcoredatamodel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0609900C211F88E7008DB974 /* needcoredatamodel.xcdatamodel */,
+			);
+			currentVersion = 0609900C211F88E7008DB974 /* needcoredatamodel.xcdatamodel */;
+			path = needcoredatamodel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 061127DE20F0A22300DAF237 /* Project object */;
 }
