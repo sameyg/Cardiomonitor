@@ -8,8 +8,9 @@
 
 import UIKit
 
+var list = ["test1", "test2", "test3"]
+
 class RateRawDataVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    var list = ["test1", "test2", "test3"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return (list.count)
@@ -31,6 +32,10 @@ class RateRawDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
 
     @IBOutlet weak var rawDataTable: UITableView!
+    
+    override func viewDidAppear(_ animated: Bool) {
+        rawDataTable.reloadData()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

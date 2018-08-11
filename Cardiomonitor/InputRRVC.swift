@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  InputRRVC.swift
 //  Cardiomonitor
 //
 //  Created by Samantha Amey-Gonzalez on 7/7/18.
@@ -9,6 +9,7 @@
 import UIKit
 
 class InputRRVC: UIViewController {
+// time and date
     @IBOutlet weak var timeDate: UILabel!
     var timer = Timer()
     @objc func autoTimeDate() {
@@ -24,6 +25,23 @@ class InputRRVC: UIViewController {
         
         
     }
+   
+// submitting new RR to saved data
+    
+    @IBOutlet weak var breathInput: UITextField!
+    @IBOutlet weak var commentInput: UITextView!
+    
+    @IBAction func addBreathInput(_ sender: Any) {
+        if (breathInput.text != "")
+        {
+        list.append(breathInput.text!)
+        }
+        else {
+            print("You need to put in an actual value")
+        }
+    }
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +56,10 @@ class InputRRVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //hide keyboard when user touches outside
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
 
 }
 

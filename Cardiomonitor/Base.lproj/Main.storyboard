@@ -177,6 +177,9 @@
                                 <rect key="frame" x="134" y="349.5" width="53" height="30"/>
                                 <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Submit "/>
+                                <connections>
+                                    <action selector="addBreathInput:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="UgM-u1-wXS"/>
+                                </connections>
                             </button>
                             <textView clipsSubviews="YES" contentMode="scaleToFill" keyboardDismissMode="onDrag" text="Comment" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="dgN-Vm-1dP">
                                 <rect key="frame" x="35" y="275.5" width="250" height="54"/>
@@ -226,6 +229,8 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="RR" image="second" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="breathInput" destination="als-Rt-nt6" id="0JB-87-NOw"/>
+                        <outlet property="commentInput" destination="dgN-Vm-1dP" id="cFg-6u-BFU"/>
                         <outlet property="timeDate" destination="IRv-ub-fCF" id="HVt-zu-l80"/>
                     </connections>
                 </viewController>
