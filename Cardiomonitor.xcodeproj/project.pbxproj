@@ -1,0 +1,355 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		061127EA20F0A22300DAF237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127E920F0A22300DAF237 /* AppDelegate.swift */; };
+		061127EC20F0A22300DAF237 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127EB20F0A22300DAF237 /* FirstViewController.swift */; };
+		061127EE20F0A22300DAF237 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127ED20F0A22300DAF237 /* SecondViewController.swift */; };
+		061127F120F0A22300DAF237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061127EF20F0A22300DAF237 /* Main.storyboard */; };
+		061127F320F0A22700DAF237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061127F220F0A22700DAF237 /* Assets.xcassets */; };
+		061127F620F0A22700DAF237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061127F420F0A22700DAF237 /* LaunchScreen.storyboard */; };
+		0636D1D420F7877C00FE3469 /* RVC logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0636D1D320F7877C00FE3469 /* RVC logo.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		061127E620F0A22300DAF237 /* Cardiomonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cardiomonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		061127E920F0A22300DAF237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		061127EB20F0A22300DAF237 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		061127ED20F0A22300DAF237 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		061127F020F0A22300DAF237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		061127F220F0A22700DAF237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		061127F520F0A22700DAF237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		061127F720F0A22800DAF237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0636D1D320F7877C00FE3469 /* RVC logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RVC logo.png"; path = "../../../Vet Stuff/RVC/RVC logo.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		061127E320F0A22300DAF237 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		061127DD20F0A22300DAF237 = {
+			isa = PBXGroup;
+			children = (
+				0636D1D220F7876200FE3469 /* Images */,
+				061127E820F0A22300DAF237 /* Cardiomonitor */,
+				061127E720F0A22300DAF237 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		061127E720F0A22300DAF237 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				061127E620F0A22300DAF237 /* Cardiomonitor.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		061127E820F0A22300DAF237 /* Cardiomonitor */ = {
+			isa = PBXGroup;
+			children = (
+				061127E920F0A22300DAF237 /* AppDelegate.swift */,
+				061127EB20F0A22300DAF237 /* FirstViewController.swift */,
+				061127ED20F0A22300DAF237 /* SecondViewController.swift */,
+				061127EF20F0A22300DAF237 /* Main.storyboard */,
+				061127F220F0A22700DAF237 /* Assets.xcassets */,
+				061127F420F0A22700DAF237 /* LaunchScreen.storyboard */,
+				061127F720F0A22800DAF237 /* Info.plist */,
+			);
+			path = Cardiomonitor;
+			sourceTree = "<group>";
+		};
+		0636D1D220F7876200FE3469 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				0636D1D320F7877C00FE3469 /* RVC logo.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		061127E520F0A22300DAF237 /* Cardiomonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 061127FA20F0A22800DAF237 /* Build configuration list for PBXNativeTarget "Cardiomonitor" */;
+			buildPhases = (
+				061127E220F0A22300DAF237 /* Sources */,
+				061127E320F0A22300DAF237 /* Frameworks */,
+				061127E420F0A22300DAF237 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cardiomonitor;
+			productName = Cardiomonitor;
+			productReference = 061127E620F0A22300DAF237 /* Cardiomonitor.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		061127DE20F0A22300DAF237 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = RVC;
+				TargetAttributes = {
+					061127E520F0A22300DAF237 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 061127E120F0A22300DAF237 /* Build configuration list for PBXProject "Cardiomonitor" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 061127DD20F0A22300DAF237;
+			productRefGroup = 061127E720F0A22300DAF237 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				061127E520F0A22300DAF237 /* Cardiomonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		061127E420F0A22300DAF237 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061127F620F0A22700DAF237 /* LaunchScreen.storyboard in Resources */,
+				061127F320F0A22700DAF237 /* Assets.xcassets in Resources */,
+				061127F120F0A22300DAF237 /* Main.storyboard in Resources */,
+				0636D1D420F7877C00FE3469 /* RVC logo.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		061127E220F0A22300DAF237 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				061127EE20F0A22300DAF237 /* SecondViewController.swift in Sources */,
+				061127EA20F0A22300DAF237 /* AppDelegate.swift in Sources */,
+				061127EC20F0A22300DAF237 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		061127EF20F0A22300DAF237 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061127F020F0A22300DAF237 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		061127F420F0A22700DAF237 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				061127F520F0A22700DAF237 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		061127F820F0A22800DAF237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		061127F920F0A22800DAF237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		061127FB20F0A22800DAF237 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N27KL9TQS8;
+				INFOPLIST_FILE = Cardiomonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RVC.Cardiomonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		061127FC20F0A22800DAF237 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N27KL9TQS8;
+				INFOPLIST_FILE = Cardiomonitor/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = RVC.Cardiomonitor;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		061127E120F0A22300DAF237 /* Build configuration list for PBXProject "Cardiomonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061127F820F0A22800DAF237 /* Debug */,
+				061127F920F0A22800DAF237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		061127FA20F0A22800DAF237 /* Build configuration list for PBXNativeTarget "Cardiomonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				061127FB20F0A22800DAF237 /* Debug */,
+				061127FC20F0A22800DAF237 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 061127DE20F0A22300DAF237 /* Project object */;
+}
