@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0609900A211F7471008DB974 /* RateRawDataVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06099009211F7471008DB974 /* RateRawDataVC.swift */; };
 		061127EA20F0A22300DAF237 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127E920F0A22300DAF237 /* AppDelegate.swift */; };
 		061127EC20F0A22300DAF237 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127EB20F0A22300DAF237 /* FirstViewController.swift */; };
-		061127EE20F0A22300DAF237 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127ED20F0A22300DAF237 /* SecondViewController.swift */; };
+		061127EE20F0A22300DAF237 /* InputRRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 061127ED20F0A22300DAF237 /* InputRRVC.swift */; };
 		061127F120F0A22300DAF237 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061127EF20F0A22300DAF237 /* Main.storyboard */; };
 		061127F320F0A22700DAF237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061127F220F0A22700DAF237 /* Assets.xcassets */; };
 		061127F620F0A22700DAF237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061127F420F0A22700DAF237 /* LaunchScreen.storyboard */; };
@@ -17,10 +18,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		06099009211F7471008DB974 /* RateRawDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRawDataVC.swift; sourceTree = "<group>"; };
 		061127E620F0A22300DAF237 /* Cardiomonitor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cardiomonitor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		061127E920F0A22300DAF237 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		061127EB20F0A22300DAF237 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		061127ED20F0A22300DAF237 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		061127ED20F0A22300DAF237 /* InputRRVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputRRVC.swift; sourceTree = "<group>"; };
 		061127F020F0A22300DAF237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		061127F220F0A22700DAF237 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		061127F520F0A22700DAF237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,7 +63,8 @@
 			children = (
 				061127E920F0A22300DAF237 /* AppDelegate.swift */,
 				061127EB20F0A22300DAF237 /* FirstViewController.swift */,
-				061127ED20F0A22300DAF237 /* SecondViewController.swift */,
+				061127ED20F0A22300DAF237 /* InputRRVC.swift */,
+				06099009211F7471008DB974 /* RateRawDataVC.swift */,
 				061127EF20F0A22300DAF237 /* Main.storyboard */,
 				061127F220F0A22700DAF237 /* Assets.xcassets */,
 				061127F420F0A22700DAF237 /* LaunchScreen.storyboard */,
@@ -150,9 +153,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				061127EE20F0A22300DAF237 /* SecondViewController.swift in Sources */,
+				061127EE20F0A22300DAF237 /* InputRRVC.swift in Sources */,
 				061127EA20F0A22300DAF237 /* AppDelegate.swift in Sources */,
 				061127EC20F0A22300DAF237 /* FirstViewController.swift in Sources */,
+				0609900A211F7471008DB974 /* RateRawDataVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
