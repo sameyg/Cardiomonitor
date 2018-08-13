@@ -12,7 +12,10 @@ import CoreData
 
 class RateRawDataVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    
+// Segue to Graph ViewController
+    @IBAction func segueButtontoGraph(_ sender: Any) {
+        performSegue(withIdentifier: "RawtoGraph", sender: self)
+    }
     
     
     
