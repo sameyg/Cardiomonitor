@@ -7,11 +7,17 @@
 //
 
 import UIKit
+import CoreData
+
+var rrCD: [NSManagedObject] = []
+
 
 class InputRRVC: UIViewController {
 // time and date
     @IBOutlet weak var timeDate: UILabel!
     var timer = Timer()
+    
+    
     @objc func autoTimeDate() {
         let dateFormatter = DateFormatter()
         dateFormatter.timeStyle = .medium
@@ -34,14 +40,46 @@ class InputRRVC: UIViewController {
     @IBAction func addBreathInput(_ sender: Any) {
         if (breathInput.text != "")
         {
-        list.append(breathInput.text!)
+            var breathInt: Int = Int(breathInput.text!)!
+            breathInt = breathInt * 4
+            let currentDate = Date()
+            saveRR(rr: breathInt, date: currentDate)
         }
         else {
             print("You need to put in an actual value")
         }
     }
     
-    
+ // function to save the RR
+    func saveRR(rr: Int, date: Date) {
+      
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        // 1
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        // 2
+        let entity =
+            NSEntityDescription.entity(forEntityName: "RR",
+                                       in: managedContext)!
+        let rrInstance = NSManagedObject(entity: entity,
+                                     insertInto: managedContext)
+        
+        
+        // 3
+        rrInstance.setValue(rr, forKeyPath: "rrdata")
+        rrInstance.setValue(date, forKeyPath: "date")
+        
+        do {
+            try managedContext.save()
+            rrCD.append(rrInstance)
+        } catch let error as NSError {
+            print("Could not save. \(error), \(error.userInfo)")
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

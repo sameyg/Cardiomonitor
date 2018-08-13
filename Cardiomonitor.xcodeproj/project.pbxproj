@@ -16,6 +16,8 @@
 		061127F320F0A22700DAF237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061127F220F0A22700DAF237 /* Assets.xcassets */; };
 		061127F620F0A22700DAF237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061127F420F0A22700DAF237 /* LaunchScreen.storyboard */; };
 		0636D1D420F7877C00FE3469 /* RVC logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0636D1D320F7877C00FE3469 /* RVC logo.png */; };
+		06846E48211F98A10067A92C /* RR+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06846E47211F98A10067A92C /* RR+CoreDataProperties.swift */; };
+		06846E4A211F98F00067A92C /* RR+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06846E49211F98F00067A92C /* RR+CoreData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		061127F520F0A22700DAF237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		061127F720F0A22800DAF237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0636D1D320F7877C00FE3469 /* RVC logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RVC logo.png"; path = "../../../Vet Stuff/RVC/RVC logo.png"; sourceTree = "<group>"; };
+		06846E47211F98A10067A92C /* RR+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RR+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		06846E49211F98F00067A92C /* RR+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RR+CoreData.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +50,8 @@
 		061127DD20F0A22300DAF237 = {
 			isa = PBXGroup;
 			children = (
+				06846E47211F98A10067A92C /* RR+CoreDataProperties.swift */,
+				06846E49211F98F00067A92C /* RR+CoreData.swift */,
 				0636D1D220F7876200FE3469 /* Images */,
 				061127E820F0A22300DAF237 /* Cardiomonitor */,
 				061127E720F0A22300DAF237 /* Products */,
@@ -157,9 +163,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0609900D211F88E7008DB974 /* needcoredatamodel.xcdatamodeld in Sources */,
+				06846E48211F98A10067A92C /* RR+CoreDataProperties.swift in Sources */,
 				061127EE20F0A22300DAF237 /* InputRRVC.swift in Sources */,
 				061127EA20F0A22300DAF237 /* AppDelegate.swift in Sources */,
 				061127EC20F0A22300DAF237 /* FirstViewController.swift in Sources */,
+				06846E4A211F98F00067A92C /* RR+CoreData.swift in Sources */,
 				0609900A211F7471008DB974 /* RateRawDataVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

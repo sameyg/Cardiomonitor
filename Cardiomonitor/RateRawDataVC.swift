@@ -7,18 +7,33 @@
 //
 
 import UIKit
+import CoreData
 
-var list = ["test1", "test2", "test3"]
 
 class RateRawDataVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (list.count)
+        return (rrCD.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "RRCell")
-        cell.textLabel?.text = list[indexPath.row]
+        //make stuff in CoreData Strings for cells
+        let rrWut: Int = rrCD[indexPath.row].value(forKey: "rrdata") as! Int
+        let rrString = String(rrWut)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.timeStyle = .medium
+        dateFormatter.dateStyle = .medium
+        
+        let rrDate: Date = rrCD[indexPath.row].value(forKey: "date") as! Date
+        let dateString = dateFormatter.string(from: rrDate)
+        
+        cell.textLabel?.text = "\(dateString), \(rrString)"
         
         return cell
     }
@@ -26,7 +41,26 @@ class RateRawDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == UITableViewCellEditingStyle.delete
         {
-            list.remove(at: indexPath.row)
+            rrCD.remove(at: indexPath.row)
+//Delete from CoreData as well!
+            
+            guard let appDelegate =
+                UIApplication.shared.delegate as? AppDelegate else {
+                    return
+            }
+//Copied from Fetching CoreData line (81 at time of this)
+            let managedContext =
+                appDelegate.persistentContainer.viewContext
+            let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "RR")
+            do {
+                let removeThisRR = try managedContext.fetch(fetchRequest)
+                managedContext.delete(removeThisRR[indexPath.row])
+                
+                try managedContext.save()
+            }
+            catch {
+                print("big oopsies")
+            }
             rawDataTable.reloadData()
         }
     }
@@ -43,6 +77,31 @@ class RateRawDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         // Do any additional setup after loading the view.
     }
 
+// Fetching CoreData
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        //1
+        guard let appDelegate =
+            UIApplication.shared.delegate as? AppDelegate else {
+                return
+        }
+        
+        let managedContext =
+            appDelegate.persistentContainer.viewContext
+        
+        //2
+        let fetchRequest = NSFetchRequest<NSManagedObject>(entityName: "RR")
+        
+        //3
+        do {
+            rrCD = try managedContext.fetch(fetchRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+        }
+    }
+
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
