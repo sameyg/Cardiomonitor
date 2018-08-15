@@ -20,6 +20,7 @@
 		06846E4A211F98F00067A92C /* RR+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06846E49211F98F00067A92C /* RR+CoreData.swift */; };
 		06B23F852121F23300345741 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B23F842121F23300345741 /* Graph.swift */; };
 		06B23F892122020800345741 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B23F882122020800345741 /* AlarmsViewController.swift */; };
+		06B23F8B2124231400345741 /* ContactInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B23F8A2124231400345741 /* ContactInfoVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		06846E49211F98F00067A92C /* RR+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RR+CoreData.swift"; sourceTree = "<group>"; };
 		06B23F842121F23300345741 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
 		06B23F882122020800345741 /* AlarmsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmsViewController.swift; sourceTree = "<group>"; };
+		06B23F8A2124231400345741 /* ContactInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactInfoVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				061127ED20F0A22300DAF237 /* InputRRVC.swift */,
 				06099009211F7471008DB974 /* RateRawDataVC.swift */,
 				061127EF20F0A22300DAF237 /* Main.storyboard */,
+				06B23F8A2124231400345741 /* ContactInfoVC.swift */,
 				06B23F882122020800345741 /* AlarmsViewController.swift */,
 				06B23F842121F23300345741 /* Graph.swift */,
 				0609900B211F88E7008DB974 /* needcoredatamodel.xcdatamodeld */,
@@ -177,6 +180,7 @@
 				061127EC20F0A22300DAF237 /* FirstViewController.swift in Sources */,
 				06846E4A211F98F00067A92C /* RR+CoreData.swift in Sources */,
 				0609900A211F7471008DB974 /* RateRawDataVC.swift in Sources */,
+				06B23F8B2124231400345741 /* ContactInfoVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,6 +10,9 @@ import UIKit
 
 class FirstViewController: UIViewController {
 
+    @IBAction func segueButtonContactInfo(_ sender: Any) {
+        performSegue(withIdentifier: "segueToContactInfo", sender: self)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
