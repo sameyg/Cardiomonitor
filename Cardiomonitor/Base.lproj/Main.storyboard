@@ -55,6 +55,15 @@
                                     <action selector="segueButtonContactInfo:" destination="9pv-A4-QxB" eventType="touchUpInside" id="ddR-tx-OrS"/>
                                 </connections>
                             </button>
+                            <searchBar contentMode="redraw" fixedFrame="YES" placeholder="This doesn't work yet" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kLV-If-ZNU">
+                                <rect key="frame" x="0.0" y="95" width="320" height="56"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <scopeButtonTitles>
+                                    <string>Title</string>
+                                    <string>Title</string>
+                                </scopeButtonTitles>
+                            </searchBar>
                         </subviews>
                         <color key="backgroundColor" red="0.4982113242149353" green="0.24733161926269531" blue="0.59674471616744995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -204,13 +213,16 @@ Email:</string>
                                 <state key="normal" title="Export">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="exportToCSVButton:" destination="CWy-iu-Jhc" eventType="touchUpInside" id="d7r-6v-bpY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.49821132420000003" green="0.2473316193" blue="0.59674471620000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="2Rq-eC-JGt" firstAttribute="top" secondItem="48a-pR-9Jv" secondAttribute="top" id="08l-iP-PMC"/>
                             <constraint firstItem="2Rq-eC-JGt" firstAttribute="leading" secondItem="Do5-Qj-kVY" secondAttribute="leading" constant="17" id="4BY-qa-AUf"/>
-                            <constraint firstItem="3KC-EX-IQy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2Rq-eC-JGt" secondAttribute="trailing" symbolic="YES" id="57W-5D-b9Y"/>
+                            <constraint firstItem="3KC-EX-IQy" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2Rq-eC-JGt" secondAttribute="trailing" constant="8" symbolic="YES" id="57W-5D-b9Y"/>
                             <constraint firstItem="8Fx-6N-xf8" firstAttribute="bottom" secondItem="LE8-fD-R0T" secondAttribute="bottom" id="Cej-yf-WXP"/>
                             <constraint firstItem="3KC-EX-IQy" firstAttribute="centerX" secondItem="Do5-Qj-kVY" secondAttribute="centerX" id="FXh-rY-yzc"/>
                             <constraint firstItem="2Rq-eC-JGt" firstAttribute="baseline" secondItem="48a-pR-9Jv" secondAttribute="firstBaseline" id="HTj-Di-a39"/>
