@@ -24,10 +24,11 @@ class RateRawDataVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         exportDatabase()
     }
     // Segue to Graph ViewController
-    @IBAction func segueButtontoGraph(_ sender: Any) {
-        performSegue(withIdentifier: "RawtoGraph", sender: self)
-    }
+  
     
+    @IBAction func buttonToGraph(_ sender: Any) {
+        performSegue(withIdentifier: "seguetoGraph", sender: self)
+    }
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

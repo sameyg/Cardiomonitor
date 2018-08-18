@@ -16,12 +16,52 @@
 		061127F320F0A22700DAF237 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 061127F220F0A22700DAF237 /* Assets.xcassets */; };
 		061127F620F0A22700DAF237 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 061127F420F0A22700DAF237 /* LaunchScreen.storyboard */; };
 		0636D1D420F7877C00FE3469 /* RVC logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 0636D1D320F7877C00FE3469 /* RVC logo.png */; };
+		065B826021287E5000794FED /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 065B825D21287D2A00794FED /* Charts.framework */; };
+		065B826121287E5000794FED /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 065B825D21287D2A00794FED /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		06846E48211F98A10067A92C /* RR+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06846E47211F98A10067A92C /* RR+CoreDataProperties.swift */; };
 		06846E4A211F98F00067A92C /* RR+CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06846E49211F98F00067A92C /* RR+CoreData.swift */; };
 		06B23F852121F23300345741 /* Graph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B23F842121F23300345741 /* Graph.swift */; };
 		06B23F892122020800345741 /* AlarmsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B23F882122020800345741 /* AlarmsViewController.swift */; };
 		06B23F8B2124231400345741 /* ContactInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06B23F8A2124231400345741 /* ContactInfoVC.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		065B825C21287D2A00794FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065B825721287D2900794FED /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		065B825E21287D2A00794FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065B825721287D2900794FED /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		065B826221287E5000794FED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 065B825721287D2900794FED /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		065B826421287E5100794FED /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				065B826121287E5000794FED /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		06099009211F7471008DB974 /* RateRawDataVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RateRawDataVC.swift; sourceTree = "<group>"; };
@@ -35,6 +75,7 @@
 		061127F520F0A22700DAF237 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		061127F720F0A22800DAF237 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0636D1D320F7877C00FE3469 /* RVC logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "RVC logo.png"; path = "../../../Vet Stuff/RVC/RVC logo.png"; sourceTree = "<group>"; };
+		065B825721287D2900794FED /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
 		06846E47211F98A10067A92C /* RR+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RR+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		06846E49211F98F00067A92C /* RR+CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RR+CoreData.swift"; sourceTree = "<group>"; };
 		06B23F842121F23300345741 /* Graph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graph.swift; sourceTree = "<group>"; };
@@ -47,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				065B826021287E5000794FED /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +103,7 @@
 				0636D1D220F7876200FE3469 /* Images */,
 				061127E820F0A22300DAF237 /* Cardiomonitor */,
 				061127E720F0A22300DAF237 /* Products */,
+				065B825721287D2900794FED /* Charts.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +142,15 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
+		065B825821287D2900794FED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				065B825D21287D2A00794FED /* Charts.framework */,
+				065B825F21287D2A00794FED /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,10 +161,12 @@
 				061127E220F0A22300DAF237 /* Sources */,
 				061127E320F0A22300DAF237 /* Frameworks */,
 				061127E420F0A22300DAF237 /* Resources */,
+				065B826421287E5100794FED /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				065B826321287E5000794FED /* PBXTargetDependency */,
 			);
 			name = Cardiomonitor;
 			productName = Cardiomonitor;
@@ -145,12 +199,35 @@
 			mainGroup = 061127DD20F0A22300DAF237;
 			productRefGroup = 061127E720F0A22300DAF237 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 065B825821287D2900794FED /* Products */;
+					ProjectRef = 065B825721287D2900794FED /* Charts.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				061127E520F0A22300DAF237 /* Cardiomonitor */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		065B825D21287D2A00794FED /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 065B825C21287D2A00794FED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		065B825F21287D2A00794FED /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 065B825E21287D2A00794FED /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		061127E420F0A22300DAF237 /* Resources */ = {
@@ -185,6 +262,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		065B826321287E5000794FED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 065B826221287E5000794FED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		061127EF20F0A22300DAF237 /* Main.storyboard */ = {
@@ -323,6 +408,7 @@
 		061127FB20F0A22800DAF237 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N27KL9TQS8;
@@ -341,6 +427,7 @@
 		061127FC20F0A22800DAF237 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = N27KL9TQS8;

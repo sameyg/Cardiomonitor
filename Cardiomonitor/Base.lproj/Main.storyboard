@@ -199,7 +199,7 @@ Email:</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <action selector="segueButtontoGraph:" destination="CWy-iu-Jhc" eventType="touchUpInside" id="40n-fW-130"/>
+                                    <action selector="buttonToGraph:" destination="CWy-iu-Jhc" eventType="touchUpInside" id="7bO-qx-wdI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Rq-eC-JGt">
@@ -240,7 +240,7 @@ Email:</string>
                     <tabBarItem key="tabBarItem" title="Raw Data" image="second" id="LnO-3A-ERa"/>
                     <connections>
                         <outlet property="rawDataTable" destination="8Fx-6N-xf8" id="vgd-xx-sXC"/>
-                        <segue destination="Wpv-le-Gy0" kind="presentation" identifier="RawtoGraph" id="rzK-EE-i5J"/>
+                        <segue destination="Wpv-le-Gy0" kind="presentation" identifier="seguetoGraph" id="rsu-pL-P9E"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SRD-JS-Zlz" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -266,23 +266,28 @@ Email:</string>
                                     <action selector="onCloseButton:" destination="Wpv-le-Gy0" eventType="touchUpInside" id="hsY-uA-aEJ"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hehe maybe this will work eventually. " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BqL-h1-A1x">
-                                <rect key="frame" x="32" y="175" width="256" height="219"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="39"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sR6-AP-ANm" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="71" width="320" height="497"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="01W-ZW-pwD" firstAttribute="trailing" secondItem="sR6-AP-ANm" secondAttribute="trailing" id="3Yt-Gl-09p"/>
                             <constraint firstItem="3lQ-cY-36q" firstAttribute="top" secondItem="01W-ZW-pwD" secondAttribute="top" id="5sh-Up-5uO"/>
                             <constraint firstItem="3lQ-cY-36q" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OO2-DH-dPb" secondAttribute="leading" constant="20" symbolic="YES" id="7Il-Qn-U8s"/>
+                            <constraint firstItem="sR6-AP-ANm" firstAttribute="leading" secondItem="01W-ZW-pwD" secondAttribute="leading" id="80C-Lf-NqT"/>
                             <constraint firstItem="01W-ZW-pwD" firstAttribute="trailing" secondItem="3lQ-cY-36q" secondAttribute="trailing" constant="10" id="9GF-hv-Vhc"/>
+                            <constraint firstItem="sR6-AP-ANm" firstAttribute="top" secondItem="3lQ-cY-36q" secondAttribute="bottom" id="dAO-fk-c3q"/>
+                            <constraint firstItem="01W-ZW-pwD" firstAttribute="bottom" secondItem="sR6-AP-ANm" secondAttribute="bottom" id="r7q-hU-Ut5"/>
                             <constraint firstItem="01W-ZW-pwD" firstAttribute="trailing" secondItem="3lQ-cY-36q" secondAttribute="trailing" constant="10" id="xOF-5W-Mwi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="01W-ZW-pwD"/>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="lineChartView" destination="sR6-AP-ANm" id="T9G-nM-fPZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ra4-92-Luv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
